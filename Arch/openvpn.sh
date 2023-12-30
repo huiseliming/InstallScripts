@@ -1,3 +1,5 @@
+#!/bin/bash -v
+
 if [$# -ne 2];
 then
     echo "provide username(\$1) and password(\$2)";
@@ -17,6 +19,7 @@ sudo sh -c "echo 'net.ipv6.conf.$netname.disable_ipv6=1' >> /etc/sysctl.d/40-ipv
 done
 sudo systemctl restart systemd-sysctl.service
 sudo systemctl restart NetworkManager.service
+
 
 # sudo scp profile-56.ovpn huiseliming@192.168.0.104:~/client.ovpn
 sudo nmcli connection import type openvpn file ~/client.ovpn
