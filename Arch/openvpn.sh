@@ -42,3 +42,18 @@ sudo nmcli connection up "client"
 # sudo nmcli connection down "client"
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
