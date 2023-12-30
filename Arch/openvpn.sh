@@ -14,7 +14,10 @@ sudo systemctl restart NetworkManager.service
 
 # sudo scp profile-56.ovpn huiseliming@192.168.0.104:~/client.ovpn
 sudo nmcli connection import type openvpn file ~/client.ovpn
+sudo nmcli connection show
 
 sudo systemctl restart systemd-sysctl.service
 sudo systemctl restart NetworkManager.service
+
+sudo nmcli connection up client
 
