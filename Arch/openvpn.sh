@@ -1,7 +1,6 @@
 if [$# -ne 2];
 then
-else
-    echo "provide username(\$1) and password(\$2)"
+    echo "provide username(\$1) and password(\$2)";
     exit
 if
 
