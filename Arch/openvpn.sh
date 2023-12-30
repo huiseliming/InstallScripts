@@ -2,7 +2,7 @@
 
 if [$# -ne 2] then
     echo "provide username(\$1) and password(\$2)"
-    exit
+    exit 0
 fi
 
 sudo pacman -Sy networkmanager networkmanager-openvpn network-manager-applet openvpn
