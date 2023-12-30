@@ -1,9 +1,9 @@
-#!/bin/bash -v
+#!/bin/bash
 
 if [$# -ne 2];
 then
     echo "provide username(\$1) and password(\$2)";
-    exit;
+    exit 0;
 if
 
 #sudo pacman -Sy networkmanager networkmanager-openvpn network-manager-applet openvpn
