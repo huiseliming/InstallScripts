@@ -1,3 +1,10 @@
+if [$# -ne 2];
+then
+else
+    echo "provide username(\$1) and password(\$2)"
+    exit
+if
+
 sudo pacman -Sy networkmanager networkmanager-openvpn network-manager-applet openvpn
 sudo systemctl enable NetworkManager.service
 sudo systemctl start NetworkManager.service
