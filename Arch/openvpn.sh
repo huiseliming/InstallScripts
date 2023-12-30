@@ -40,3 +40,5 @@ sudo systemctl restart NetworkManager.service
 
 sudo nmcli connection up "client"
 # sudo nmcli connection down "client"
+
+
